@@ -1,0 +1,37 @@
+.typelist {
+    margin: 5px auto;
+    text-align: center;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 5px;
+}
+
+.typelist ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.typelist ul li {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin: 4px 30px 4px;
+}
+
+.typelist ul li a {
+    text-decoration: none;
+    color: #2D6A77;
+    font-size: 20px;
+    padding: 1px;
+}
+
+.typelist ul li a:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: #EBEDED;
+}
+
+.typelistInClick {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: #EBEDED;
+}

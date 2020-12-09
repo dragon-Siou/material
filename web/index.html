@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Pick a pic</title>
+    <link rel="icon" href="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/99014266_543009106363583_612886314106224640_n.png?_nc_cat=102&_nc_sid=b96e70&_nc_oc=AQk7csJrcNeIUIxKONwRn1t7Eo1Z53EyeHdIOzbFxdE0qagGFcWXgHpFqvjarYtvuVA&_nc_ht=scontent-tpe1-1.xx&oh=82322943c21d87282a41807cbc256a7b&oe=5EF316B1"
+    />
+    <link rel=stylesheet type="text/css" href="web.css">
+    <link rel=stylesheet type="text/css" href="index.css">
+    <link rel=stylesheet type="text/css" href="content.css">
+    <link rel=stylesheet type="text/css" href="typelist.css">
+    <link rel=stylesheet type="text/css" href="lightbox.css">
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="lightbox.js"></script>
+    <script src="typeClickItem.js"></script>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/urlParameter.js"></script>
+    <script src="javascript/showDataObject.js"></script>
+    <script src="javascript/loginChecking.js"></script>
+    <!--sweetalert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <div class="indexnavbar">
+        <div class="menu">
+            <!--若是有登入，才顯示-->
+            <!--
+            <img src="images/personMessage.png">
+            -->
+            <a href="message.html">
+                <img src="images/message.png" class="message">
+            </a>
+
+            <a id="shopcartHerf" href="checker.html">
+                <img src="images/shopcart.png">
+            </a>
+
+            <!--若是有登入，要替換成大頭照-->
+            <a href="person_main.html">
+                <img id="userHeadPic" src="images/user.png">
+            </a>
+        </div>
+
+        <div class="logo">
+            <img src="images/logo.gif">
+        </div>
+        <div class="searcharea">
+            <form id="searchForm">
+                <span>
+                    <input type="text" id="search" name="search" class="searchbar">
+                    <button id="searchButton" class="buttonSearch"><img src="images/searchicon.png" class="searchicon"></button>
+                </span>
+            </form>
+        </div>
+
+
+
+    </div>
+
+    <div class="typelist">
+
+        <ul>
+            <li><a href="index.html?searchType=gallery">作品</a></li>
+            <li><a href="index.html?searchType=product">商品</a></li>
+            <li><a href="index.html?searchType=commission">委託</a></li>
+        </ul>
+    </div>
+
+    <!--這邊是純輸出圖片的地方，圖片點開後出現的小視窗位在錨點區塊-->
+    <div class="content">
+        <div class="box">
+            <a href="#pic1">
+                <img src="images/nieuGivePhoto/1.jpg">
+            </a>
+        </div>
+    </div>
+
+    <!--錨點區-->
+
+
+</body>
+
+
+</html>

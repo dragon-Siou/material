@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Pick a pic
+    </title>
+    <link rel="icon" href="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/99014266_543009106363583_612886314106224640_n.png?_nc_cat=102&_nc_sid=b96e70&_nc_oc=AQk7csJrcNeIUIxKONwRn1t7Eo1Z53EyeHdIOzbFxdE0qagGFcWXgHpFqvjarYtvuVA&_nc_ht=scontent-tpe1-1.xx&oh=82322943c21d87282a41807cbc256a7b&oe=5EF316B1"
+    />
+    <link rel=stylesheet type="text/css" href="web.css">
+    <link rel=stylesheet type="text/css" href="checker.css">
+    <link rel=stylesheet type="text/css" href="topNavbar.css">
+    <link rel=stylesheet type="text/css" href="changeUserInfo.css">
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="checker.js"></script>
+    <script src="javascript/checker.js"></script>
+    <script src="javascript/loginChecking.js"></script>
+    <!--sweetalert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body class="signbg">
+
+    <div class="signNavBarContainer">
+        <div class="signlogo">
+            <a href="index.html">
+                <img src="images/logo_static.png">
+            </a>
+        </div>
+        <div class="signmenu">
+            <!--
+            <img src="images/personMessage.png">
+            <img src="images/shopcart.png">
+            -->
+            <a href="person_main.html">
+                <img src="images/bigHead/7.png" class="personSmallHead">
+            </a>
+        </div>
+        <div class="clear"></div>
+        <!--pic-->
+        <div class="headInChecker">
+            <img src="images/checkerPage/title.png" class="headPicInChecker">
+        </div>
+
+        <div class="titleRowInChecker">
+            <!--第一個因很特殊所以使用虛擬選擇器firstchild進行css設定-->
+            <div>商品</div>
+            <div class="typeInTitleRow">分類</div>
+            <div class="addInTitleRow">加入願望清單</div>
+            <div class="priceInTitleRow">價格</div>
+            <div class="deleteInTitleRow">刪除</div>
+            <div class="clear"></div>
+        </div>
+        <!--下面的商品列表-->
+        <div class="infoContaineInChecker">
+            <!--
+            <div class="productInfoInContainer">
+                <div class="picInfoinChecker">
+                    <img src="images\nieuGivePhoto\3.jpg">
+                </div>
+                <div class="workInfoInChecker">
+                    <div class="userInforInChecker">
+                        <img src="images/bigHead/8.png" class="bigHeadInWorkInfoChecker">
+                        <span class="nameInWorkInfoChecker">jason_dog</span>
+                        <img src="images/userControllPage/conact.png" class="conactInWorkInfoChecker">
+                        <div class="clear"></div>
+                    </div>
+                    <div class="workNameInWorkInfoChecker">工作室作品照Pic of my drawings</div>
+                </div>
+                <div class="typeInfoInChecker">
+                    <div class="typetext">
+                        照片
+                    </div>
+                </div>
+                <div class="goodInfoInChecker">
+
+                    <label for="goodIcon" class="custom_good_icon">
+                        <input type="radio" id="goodIcon" class="goodInfo">
+                    </label>
+
+                </div>
+                <div class="priceInfoInChecker">
+                    <div>
+                        $289
+                    </div>
+                </div>
+                <div class="trashInChecker">
+                    <img src="images/checkerPage/trash.png" class="picIngood">
+                </div>
+                <div class="clear"></div>
+            </div>
+           
+            <div class="productInfoInContainer">
+                <div class="picInfoinChecker">
+                    <img src="images\nieuGivePhoto\1.jpg">
+                </div>
+                <div class="workInfoInChecker">
+                    <div class="userInforInChecker">
+                        <img src="images/bigHead/8.png" class="bigHeadInWorkInfoChecker">
+                        <span class="nameInWorkInfoChecker">jason_dog</span>
+                        <img src="images/userControllPage/conact.png" class="conactInWorkInfoChecker">
+                        <div class="clear"></div>
+                    </div>
+                    <div class="workNameInWorkInfoChecker">工作室作品照Pic of my drawings</div>
+                </div>
+                <div class="typeInfoInChecker">
+                    <div class="typetext">
+                        照片
+                    </div>
+                </div>
+                <div class="goodInfoInChecker">
+
+                    <label for="goodIcon1" class="custom_good_icon">
+                        <input type="radio" id="goodIcon1" class="goodInfo">
+                    </label>
+
+                </div>
+                <div class="priceInfoInChecker">
+                    <div>
+                        $289
+                    </div>
+                </div>
+                <div class="trashInChecker">
+                    <img src="images/checkerPage/trash.png" class="picIngood">
+                </div>
+                <div class="clear"></div>
+            </div>
+-->
+
+        </div>
+        <!--結帳區-->
+        <div class="paySecInChecker">
+            <div class="descInPay">
+                <span id="productCount">0</span> 個商品，總金額$
+                <span id="productPrice">0</span>
+            </div>
+            <img id="buyButton" src="images/checkerPage/cash.png" class="sumbitButtonInCash">
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script>
+</script>
+
+</html>

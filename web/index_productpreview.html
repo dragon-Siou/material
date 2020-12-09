@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Pick a pic</title>
+
+    <link rel=stylesheet type="text/css" href="web.css">
+    <link rel=stylesheet type="text/css" href="index.css">
+    <link rel=stylesheet type="text/css" href="content.css">
+    <link rel=stylesheet type="text/css" href="typelist.css">
+    <link rel=stylesheet type="text/css" href="lightbox.css">
+
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="lightbox.js"></script>
+    <script src="index.js"></script>
+    <!--sweetalert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <div class="indexnavbar">
+        <div class="menu">
+            <img src="images/shopcart.png">
+            <img src="images/user.png">
+        </div>
+
+        <div class="logo">
+            <img src="images/logo.gif">
+        </div>
+        <div class="searcharea">
+            <form>
+                <span>
+                    <input type="text" name="search" class="searchbar">
+                    <button><img src="images/searchicon.png" class="searchicon"></button>
+                </span>
+
+
+            </form>
+        </div>
+    </div>
+
+    <div class="typelist">
+
+        <ul>
+            <li class="typelistItem"><a href="#">作品</a></li>
+            <li class="typelistItem"><a href="#">商品</a></li>
+            <li class="typelistItem"><a href="#">委託</a></li>
+        </ul>
+
+    </div>
+
+    <!--這邊是純輸出圖片的地方，圖片點開後出現的小視窗位在錨點區塊-->
+    <div class="content">
+        <div class="box">
+            <a href="#pic1">
+                <img src="images/nieuGivePhoto/1.jpg">
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="#pic2">
+                <img src="images/nieuGivePhoto/2.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic3">
+                <img src="images/nieuGivePhoto/3.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic4">
+                <img src="images/nieuGivePhoto/4.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic5">
+                <img src="images/nieuGivePhoto/5.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic6">
+                <img src="images/nieuGivePhoto/6.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic7">
+                <img src="images/nieuGivePhoto/7.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic8">
+                <img src="images/nieuGivePhoto/8.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic9">
+                <img src="images/nieuGivePhoto/9.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic10">
+                <img src="images/nieuGivePhoto/10.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic11">
+                <img src="images/nieuGivePhoto/11.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic12">
+                <img src="images/nieuGivePhoto/12.jpg">
+            </a>
+        </div>
+
+    </div>
+
+    <!--商品錨點區-->
+    <div class="lightbox" id="pic1">
+        <div class="brightFilter">
+            <img src="images/nieuGivePhoto/1.jpg">
+        </div>
+        <div class="whiteInfo">
+
+
+            <div class="toolRow">
+                <img src="images/picInfoPage/edit.png" class="toolRowJS">
+
+
+                <span>
+                    <img src="images/picInfoPage/more.png" class="more">
+                    <ul class="moreOption">
+                        <li><a>下載圖片</a></li>
+                        <li><a>分享連結</a></li>
+                    </ul>
+                </span>
+
+
+                <a href="#"><img src="images/picInfoPage/close.png" class="closeIcon"></a>
+            </div>
+
+            <div class="realInfoContainer">
+                <!--工具列下方第一欄-->
+                <div class="userNameInClick">
+                    <div class="userName">
+                        <img src="images/bigHead/8.png">
+
+                    </div>
+                    <div class="realnameInClick">fubi_ccy</div>
+                    <div class="time">
+                        2020/5/11 10:17 P.M.
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+                <!--工具列下方第二欄，標題-->
+                <div class="picTitleInClick">
+                    <input type="text" value="My Drawingswwww" disabled="true" class="disableTitle">
+                </div>
+                <!--工具列下方第三欄，價錢-->
+                <div class="picPriceInClick_product">
+                    <input type="text" value="$399" disabled="true" class="disablePrice">
+                </div>
+                <!--工具列下方第四欄，標籤-->
+                <div class="picTagInClick">
+                    <ul class="ulForJS">
+
+                        <li>#art</li>
+                        <li>#drawing</li>
+                        <li>#pic</li>
+                        <li>#moody</li>
+                        <li>#cute</li>
+
+                    </ul>
+                    <input type="text" class="hideTagEnter" placeholder="輸入標籤...">
+                </div>
+                <!--工具列下方第五欄，敘述-->
+                <div class="desctiptionInClick">
+                    <textarea class="disableTextarea" disabled="true">I am always looking for models to shoot!<br> Comment down if you want a photoshoot!<br> need a photoshoot ? Conacting in bio!
+                    </textarea>
+                </div>
+                <div class="submitInProduct">
+                    <img src="images/picInfoPage/store.png">
+                </div>
+
+            </div>
+
+            <div class="commentArea">
+                <!--一則留言開始-->
+                <div class="commentInClick">
+                    <div class="headInComment">
+                        <img src="images/bigHead/3.png">
+                    </div>
+
+                    <div class="name">
+                        book_fish
+                    </div>
+                    <div class="comment">
+                        好酷喔!拍什麼呀?你是什麼你是什麼你是什麼你是什麼你是什麼你是什麼你是什麼你是什麼你是什麼
+                    </div>
+                    <div class="sentMinute">
+                        4分鐘
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+
+            </div>
+
+            <div class="enterArea">
+                <form>
+                    <input type="submit" name="addFollowList" class="addFollowList_product" value="">
+                    <input type="submit" name="putShopCart" class="putShopCart_product" value="">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!---->
+    <div class="lightbox" id="pic2">
+        <div class="brightFilter">
+            <img src="images/nieuGivePhoto/2.jpg">
+        </div>
+        <div class="whiteInfo">
+
+
+            <div class="toolRow">
+                <img src="images/picInfoPage/edit.png" class="toolRowJS">
+
+
+                <span>
+                    <img src="images/picInfoPage/more.png" class="more">
+                    <ul class="moreOption">
+                        <li><a>下載圖片</a></li>
+                        <li><a>分享連結</a></li>
+                    </ul>
+                </span>
+
+
+                <a href="#"><img src="images/picInfoPage/close.png" class="closeIcon"></a>
+            </div>
+
+            <div class="realInfoContainer">
+                <!--工具列下方第一欄-->
+                <div class="userNameInClick">
+                    <div class="userName">
+                        <img src="images/bigHead/8.png">
+
+                    </div>
+                    <div class="realnameInClick">fubi_ccy</div>
+                    <div class="time">
+                        2020/5/11 10:17 P.M.
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+                <!--工具列下方第二欄，標題-->
+                <div class="picTitleInClick">
+                    <input type="text" value="My Drawingswwww" disabled="true" class="disableTitle">
+                </div>
+                <!--工具列下方第三欄，價錢-->
+                <div class="picPriceInClick_product">
+                    <input type="text" value="$399" disabled="true" class="disablePrice">
+                </div>
+                <!--工具列下方第四欄，標籤-->
+                <div class="picTagInClick">
+                    <ul class="ulForJS">
+
+                        <li>#art</li>
+                        <li>#drawing</li>
+                        <li>#pic</li>
+                        <li>#moody</li>
+                        <li>#cute</li>
+
+                    </ul>
+                    <input type="text" class="hideTagEnter" placeholder="輸入標籤...">
+                </div>
+                <!--工具列下方第五欄，敘述-->
+                <div class="desctiptionInClick">
+                    <textarea class="disableTextarea" disabled="true">I am always looking for models to shoot!<br> Comment down if you want a photoshoot!<br> need a photoshoot ? Conacting in bio!
+                    </textarea>
+                </div>
+                <div class="submitInProduct">
+                    <img src="images/picInfoPage/store.png">
+                </div>
+
+            </div>
+
+            <div class="commentArea">
+                <!--一則留言開始-->
+                <div class="commentInClick">
+                    <div class="headInComment">
+                        <img src="images/bigHead/3.png">
+                    </div>
+
+                    <div class="name">
+                        book_fish
+                    </div>
+                    <div class="comment">
+                        好酷喔!拍什麼呀?你是什麼你是什麼你是什麼你是什麼你是什麼你是什麼你是什麼你是什麼你是什麼
+                    </div>
+                    <div class="sentMinute">
+                        4分鐘
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+
+            </div>
+
+            <div class="enterArea">
+                <form>
+                    <input type="submit" name="addFollowList" class="addFollowList_product" value="">
+                    <input type="submit" name="putShopCart" class="putShopCart_product" value="">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,407 @@
+/*錨點區 點開圖片出現小視窗*/
+
+.lightbox {
+    display: none;
+}
+
+.lightbox:target {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox img {
+    height: 450px;
+}
+
+.noScroll {
+    position: fixed;
+    width: 100%;
+}
+
+.whiteInfo {
+    z-index: 2;
+    background-image: url(images/picInfoPage/white759921.png);
+    background-repeat: no-repeat;
+    background-size: 400px 450px;
+    display: inline-block;
+    width: 400px;
+    height: 450px;
+    overflow: scroll;
+}
+
+.whiteInfo::-webkit-scrollbar {
+    display: none;
+}
+
+.brightFilter {
+    display: inline;
+    -webkit-filter: brightness(.5);
+    filter: brightness(1.0);
+}
+
+.toolRow {
+    display: block;
+    text-align: right;
+    position: relative;
+    top: 15px;
+    right: 15px;
+}
+
+.toolRow img {
+    width: 23px;
+    height: 23px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.moreOption {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 3px;
+    width: 120px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px #b8b8b8;
+    text-align: left;
+}
+
+.moreOption li {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.moreOption li a {
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.moreOption li a:hover {
+    background-color: #eeeeee;
+}
+
+.realInfoContainer {
+    width: 320px;
+    height: auto;
+    margin: 22px auto 0 auto;
+}
+
+.userNameInClick {
+    font-size: 12px;
+    height: 36px;
+    width: 320px;
+    display: inline-block;
+}
+
+.userNameInClick .userName {
+    text-align: left;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+}
+
+.realnameInClick {
+    display: inline-block;
+    line-height: 36px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.realname {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.realname:hover {
+    background-color: #cccccc;
+}
+
+.userNameInClick .userName img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.userNameInClick .time {
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 36px;
+    float: right;
+}
+
+.picTitleInClick {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 4px 0 4px 0;
+    outline:none;
+}
+
+
+/*for disable title*/
+
+.disableTitle {
+    font-size: 26px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+    outline:none;
+}
+
+.disablePrice {
+    font-size: 26px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.picPriceInClick_product {
+    color: #7F2A13;
+    font-size: 26px;
+    padding: 3px 0 3px 0;
+    font-weight: bold;
+}
+
+.picTagInClick {
+    height: auto;
+}
+
+.picTagInClick ul {
+    overflow: hidden;
+    max-width: 300px;
+    display: inline-block;
+    line-height: 36px;
+}
+
+.picTagInClick ul li {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    color: white;
+    background-color: #7F2A13;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 3px 3px;
+    margin: 0 2px;
+}
+
+.picTagInClick ul li a {
+    display: inline-block;
+    width: 8px;
+    margin-left: 4px;
+    padding-left: 4px;
+    border-left: 1px solid #fff;
+    cursor: pointer;
+}
+
+.desctiptionInClick {
+    width: 320px;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    margin-top: 5px;
+    height: 60px;
+}
+
+.editAndGoodInClick {
+    display: block;
+    width: 320px;
+    height: 40px;
+}
+
+.editAndGoodInClick img {
+    float: left;
+    height: 30px;
+    cursor: pointer;
+}
+
+.submitInProduct {
+    display: none;
+    width: 320px;
+    height: 30px;
+}
+
+.submitInProduct img {
+    height: 30px;
+}
+
+.disableTextarea {
+    width: 320px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 5px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline:none;
+}
+
+.disableTextarea::-webkit-scrollbar {
+    display: none;
+}
+
+.hideTagEnter {
+    display: none;
+    outline:none;
+}
+
+
+/*for 商品點開預覽*/
+
+.desctiptionInClick_product {
+    width: 320px;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    margin-top: 5px;
+    height: 60px;
+}
+
+.commentArea {
+    width: 360px;
+    height: 130px;
+    overflow: scroll;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.commentArea::-webkit-scrollbar {
+    display: none;
+}
+
+.commentInClick {
+    height: auto;
+    display: block;
+    width: 320px;
+    margin: 5px auto;
+}
+
+.commentInClick img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.headInComment {
+    float: left;
+    width: 28px;
+    height: auto;
+}
+
+.commentInClick .name {
+    float: left;
+    max-width: 100px;
+    margin-left: 10px;
+    line-height: 28px;
+    font-size: 12px;
+    font-weight: bold;
+    height: auto;
+}
+
+.comment {
+    float: left;
+    max-width: 150px;
+    height: auto;
+    margin-left: 5px;
+    padding-top: 8px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.sentMinute {
+    float: left;
+    line-height: 28px;
+    margin-left: 3px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.enterArea {
+    width: 320px;
+    height: 28px;
+    margin: 10px auto 20px auto;
+}
+
+.enterArea form img.bigHeadInSentComment {
+    float: left;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.typeWordInSentComment {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    width: 230px;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 3px 0 3px 20px;
+    outline:none;
+}
+
+.addFollowList_product {
+    display: inline-block;
+    background-image: url(images/picInfoPage/addFollowList.png);
+    background-size: 150px 40px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.putShopCart_product {
+    display: inline-block;
+    background-image: url(images/picInfoPage/purchaseToShopcart.png);
+    background-size: 150px 40px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.delegate_product {
+    display: inline-block;
+    background-image: url(images/delegate.png);
+    background-size: 63px 40px;
+    width: 63px;
+    height: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.lightbox::before {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    /*偽類選擇器必須要加content搭配使用*/
+    cursor: default;
+}

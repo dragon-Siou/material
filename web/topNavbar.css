@@ -1,0 +1,48 @@
+.signNavBarContainer {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.signlogo {
+    float: left;
+    width: 46%;
+    margin-top: 12px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.signlogo img {
+    width: 250px;
+}
+
+.signmenu {
+    margin-top: 24px;
+    margin-left: 60px;
+    float: left;
+    width: 46%;
+    text-align: right;
+}
+
+.signmenu img {
+    margin-right: 2px;
+    width: 35px;
+    height: 35px;
+    margin: 0 2px;
+}
+
+.signmenu a {
+    text-decoration: none;
+}
+
+.signmenu img.logout {
+    margin-right: 2px;
+    width: 35px;
+    height: 30px;
+}
+
+.signmenu img.message {
+    width: 30px;
+    height: 27px;
+    border-radius: 0px;
+}

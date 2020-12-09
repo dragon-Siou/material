@@ -1,0 +1,148 @@
+.signbg {
+    background-image: url(images/background_sign.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.signContent {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.whitebackground {
+    background-image: url(images/sign_w.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-top: 50pt;
+    width: 413px;
+    height: 400px;
+}
+
+.whitebackground2 {
+    background-image: url(images/register_w.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-top: 30pt;
+    width: 413px;
+    height: 445px;
+}
+
+
+/*針對 註冊的白色框框屬性*/
+
+
+/*.registerWb {
+    background-image: url(images/whitebackground.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 430px;
+    height: 450px;
+}*/
+
+.welcome {
+    display: block;
+    width: 413px;
+    height: 120px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    overflow: hidden;
+    /* 最大數值字為1 */
+}
+
+.welcome img {
+    width: 230px;
+    height: 110px;
+}
+
+.joinus {
+    display: block;
+    width: 413px;
+    height: 110px;
+    margin-top: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.joinus img {
+    width: 230px;
+    height: 90px;
+}
+
+.infoitem {
+    position: relative;
+    text-align: center;
+    width: 413px;
+}
+
+.account {
+    background-image: url(images/enterspace.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 200px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-top: 15px;
+    padding: 10px 20px 10px 39px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+/*針對註冊的輸入框框*/
+
+.registerAccount {
+    background-image: url(images/enterspace.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 220px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin-top: 15px;
+    padding: 10px 20px 10px 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.infoitem img {
+    position: absolute;
+    top: 45%;
+    left: 21%;
+}
+
+.actionitem {
+    display: block;
+    /*負責登入按鈕還有以下兩段的div*/
+    text-align: center;
+    width: 413px;
+}
+
+.signbutton {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    position: inherit;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.signbutton img {
+    width: 65px;
+    cursor: pointer;
+}
+
+.actionitem span a {
+    margin: 0 20px 0;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.searchicon {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,243 @@
+.signbg {
+    background-image: url(images/checkerPage/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.headInChecker {
+    width: 350px;
+    height: 46px;
+    margin: 0 auto 30px auto;
+}
+
+.headPicInChecker {
+    width: 350px;
+    height: 46px;
+}
+
+.titleRowInChecker {
+    width: 700px;
+    height: 30px;
+    margin: 0 auto 14px auto;
+    border-bottom: 1px solid rgba(161, 93, 29, 0.4);
+}
+
+.titleRowInChecker div {
+    float: left;
+    height: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.titleRowInChecker div:first-child {
+    box-sizing: border-box;
+    padding-left: 20px;
+    text-align: left;
+    width: 45%;
+}
+
+.typeInTitleRow {
+    width: 10%;
+}
+
+.addInTitleRow {
+    width: 21%;
+}
+
+.priceInTitleRow {
+    width: 12%;
+}
+
+.deleteInTitleRow {
+    width: 12%;
+}
+
+
+/*中間產品段*/
+
+.infoContaineInChecker {
+    width: 700px;
+    height: 350px;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+.infoContaineInChecker::-webkit-scrollbar {
+    display: none;
+}
+
+.productInfoInContainer {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(161, 159, 159, .7);
+}
+
+.picInfoinChecker {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.picInfoinChecker img {
+    display: block;
+    margin: 6px auto;
+    padding: 4px;
+    border: 1px solid rgba(161, 93, 29, 0.4);
+    border-radius: 10px;
+    width: 88px;
+    height: 88px;
+}
+
+.workInfoInChecker {
+    float: left;
+    width: 25%;
+    height: 110px;
+    text-align: center;
+}
+
+.userInforInChecker {
+    margin: 0 auto;
+    max-width: 140px;
+    margin-top: 15px;
+}
+
+.bigHeadInWorkInfoChecker {
+    float: left;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.conactInWorkInfoChecker {
+    width: 30px;
+    cursor: pointer;
+}
+
+.authorInWorkInfoChecker {
+    overflow: hidden;
+    display: block;
+    float: left;
+    max-width: 80px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.nameInWorkInfoChecker {
+    display: block;
+    margin: 10px auto 0 auto;
+    text-align: left;
+    max-width: 140px;
+}
+
+.typeInfoInChecker {
+    float: left;
+    display: inline-flex;
+    float: left;
+    width: 10%;
+    height: 110px;
+    text-align: center;
+}
+
+.typetext {
+    width: 100%;
+    margin: auto;
+}
+
+.goodInfoInChecker {
+    display: inline-flex;
+    float: left;
+    width: 21%;
+    height: 110px;
+    text-align: center;
+}
+
+.goodInfo {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.custom_good_icon {
+    display: inline-block;
+    margin: auto;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(images/checkerPage/emptyGood.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.fullGoodJs {
+    background-image: url(images/checkerPage/fullGood.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 23px;
+    height: 23px;
+}
+
+.picIngood {
+    display: inline-block;
+    margin: auto;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.priceInfoInChecker {
+    display: inline-flex;
+    float: left;
+    width: 12%;
+    height: 110px;
+    text-align: center;
+}
+
+.priceInfoInChecker div {
+    margin: auto;
+    color: rgb(153, 53, 25);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.trashInChecker {
+    display: inline-flex;
+    float: left;
+    width: 12%;
+    height: 110px;
+    text-align: center;
+}
+
+
+/*付錢區*/
+
+.paySecInChecker {
+    margin: 10px auto 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.descInPay {
+    color: rgb(99, 35, 17);
+    font-size: 24px;
+    letter-spacing: 2px;
+    height: 45px;
+}
+
+#buyButton {
+    cursor: pointer;
+}
+
+.sumbitButtonInCash {
+    width: 70px;
+    margin: 0 auto;
+}

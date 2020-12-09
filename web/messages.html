@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick a pic</title>
+    <link rel="icon" href="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/99014266_543009106363583_612886314106224640_n.png?_nc_cat=102&_nc_sid=b96e70&_nc_oc=AQk7csJrcNeIUIxKONwRn1t7Eo1Z53EyeHdIOzbFxdE0qagGFcWXgHpFqvjarYtvuVA&_nc_ht=scontent-tpe1-1.xx&oh=82322943c21d87282a41807cbc256a7b&oe=5EF316B1"
+    />
+    <link rel=stylesheet type="text/css" href="web.css">
+    <link rel=stylesheet type="text/css" href="messages.css">
+    <link rel=stylesheet type="text/css" href="topNavbar.css">
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="messages.js"></script>
+    <script src="javascript/messages.js"></script>
+    <script src="javascript/loginChecking.js"></script>
+    <script src="javascript/urlParameter.js"></script>
+    <!--sweetalert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body class="signbg">
+
+    <div class="signNavBarContainer">
+        <div class="signlogo">
+            <a href="index.html">
+                <img src="images/logo_static.png">
+            </a>
+        </div>
+
+        <div class="signmenu">
+            <!--
+            <img src="images/personMessage.png">
+            <img src="images/user.png">
+            -->
+            <a href="person_main.html">
+                <img src="" class="personSmallHead">
+            </a>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="messageBlock">
+        <div class="listInMessage">
+            <div class="titleInList">
+                <img src="images/message/title.png">
+            </div>
+            <div class="backGroudInList">
+                <div class="personInList">
+                    <div class="picInPerson">
+                        <img src="">
+                    </div>
+                    <div class="infoInPerson">
+                        <div class="nameInInfo"></div>
+                        <div class="tellInInfo"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!--
+                <div class="personInList">
+                    <div class="picInPerson">
+                        <img src="images/bigHead/2.png">
+                    </div>
+                    <div class="infoInPerson">
+                        <div class="nameInInfo">fubi_ccy</div>
+                        <div class="tellInInfo">滾滾長江東似水 滾滾長江東似水</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="personInList">
+                    <div class="picInPerson">
+                        <img src="images/bigHead/3.png">
+                    </div>
+                    <div class="infoInPerson">
+                        <div class="nameInInfo">jsaon_dog</div>
+                        <div class="tellInInfo">hi,i love monica</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="personInList">
+                    <div class="picInPerson">
+                        <img src="images/bigHead/4.png">
+                    </div>
+                    <div class="infoInPerson">
+                        <div class="nameInInfo">elsa</div>
+                        <div class="tellInInfo">我喜歡狗狗，可以幫我變成狗嗎</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>-->
+            </div>
+        </div>
+        <div class="chatInMessage">
+            <div class="titleInChat">
+                <div class="headInC_title">
+                    <img id="chatHeadPic">
+                </div>
+                <div class="nameInC_title"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="realChatroom">
+                <!--
+                <div class="otherMessage">
+                    <div class="otherMessage_head">
+                        <img>
+                    </div>
+                    <div class="otherMessage_mes">
+                        <div class="otherMessage_mes_content"></div>
+                        <div class="otherMessage_mes_time"></div>
+                    </div>
+                </div>
+                
+                <div class="myMessage">
+                    <div class="myMessage_mes_content"></div>
+                    <div class="myMessage_mes_time"></div>
+                </div>
+
+                <div class="otherMessage">
+                    <div class="otherMessage_head">
+                        <img>
+                    </div>
+                    <div class="otherMessage_mes">
+                        <div class="otherMessage_mes_content"></div>
+                        <div class="otherMessage_mes_time"></div>
+                    </div>
+                </div>
+                -->
+            </div>
+            <form class="formInChat">
+                <!--<div class="uploadInChat">
+                    
+                    <label for="sentPic" class="label1InupFrom">
+                        
+                        <input id="sentPic" type="file" class="formUploadInUpload" />
+                        
+                        <span class="sendPic" id="uploadFileName"></span>
+                    
+                    </label>
+                </div>-->
+                <div class="typeInChat">
+                    <input id="sendMessage" type="text" placeholder="輸入文字..." class="textInputInChat">
+                </div>
+                <div class="clear"></div>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,293 @@
+.signbg {
+    background-image: url(images/personbg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/*聊天室message.html*/
+
+.messageBlock {
+    width: 1020px;
+    height: 500px;
+    /*background-color: white;*/
+    margin: 40px auto 0 auto;
+}
+
+.listInMessage {
+    float: left;
+    width: 340px;
+    height: 100%;
+    text-align: center;
+    /*background-color: violet;*/
+}
+
+.titleInList {
+    text-align: center;
+}
+
+.titleInList img {
+    width: 260px;
+}
+
+.backGroudInList {
+    background-image: url(images/message/listBK.png);
+    background-size: 300px 390px;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 390px;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+.backGroudInList::-webkit-scrollbar {
+    display: none;
+}
+
+.personInList {
+    display: inline-block;
+    margin-top: 7px;
+    width: 290px;
+    height: 60px;
+    /*background-color: tomato;*/
+}
+
+.personInList:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.picInPerson {
+    width: 60px;
+    height: 100%;
+    float: left;
+    margin-left: 15px;
+    /*background-color: rgb(152, 219, 132);*/
+}
+
+.picInPerson img {
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.infoInPerson {
+    height: 100%;
+    float: left;
+    margin-left: 16px;
+    text-align: left;
+    /*background-color: rgb(132, 219, 212);*/
+}
+
+.nameInInfo {
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+.tellInInfo {
+    max-width: 110px;
+    overflow: hidden;
+    margin-top: 5px;
+    font-size: 10px;
+    height: 10px;
+}
+
+.chatInMessage {
+    float: left;
+    width: 675px;
+    margin-left: 5px;
+    height: 100%;
+    background-image: url(images/message/chatBK.png);
+    background-size: 675px 100%;
+    background-repeat: no-repeat;
+}
+
+.titleInChat {
+    width: 100%;
+    height: 58px;
+}
+
+.headInC_title {
+    width: 58px;
+    height: 100%;
+    float: left;
+    margin-left: 15px;
+    /*background-color: rgb(152, 219, 132);*/
+}
+
+.headInC_title img {
+    width: 44px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 7px;
+}
+
+.nameInC_title {
+    height: 58px;
+    float: left;
+    color: white;
+    line-height: 58px;
+    margin-left: 5px;
+}
+
+.linkInMessage {
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.linkInMessage:hover {
+    background-color: #acacac;
+}
+
+.realChatroom {
+    width: 100%;
+    height: 360px;
+    margin-top: 20px;
+    overflow: scroll;
+}
+
+.realChatroom::-webkit-scrollbar {
+    display: none;
+}
+
+.otherMessage {
+    width: 100%;
+    height: 60px;
+    text-align: left;
+}
+
+.otherMessage_head {
+    width: 50px;
+    height: 60px;
+    margin-left: 10px;
+    float: left;
+}
+
+.otherMessage_head img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.otherMessage_mes {
+    height: 100%;
+    float: left;
+    margin-left: 3px;
+}
+
+.otherMessage_mes_content {
+    height: 30px;
+    background-color: #7F2A13;
+    color: white;
+    font-weight: 500;
+    line-height: 30px;
+    border-radius: 5px;
+    padding: 1px 10px;
+}
+
+.otherMessage_mes_time {
+    height: 28px;
+    color: #7F2A13;
+    font-size: 10px;
+    line-height: 28px;
+}
+
+.myMessage {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    text-align: right;
+}
+
+.myMessage_mes_content {
+    position: absolute;
+    right: 10px;
+    height: 30px;
+    background-color: rgba(138, 126, 101, 0.938);
+    color: white;
+    font-weight: 500;
+    line-height: 30px;
+    border-radius: 5px;
+    padding: 1px 10px;
+}
+
+.myMessage_mes_time {
+    position: absolute;
+    right: 10px;
+    top: 32px;
+    height: 28px;
+    color: rgba(138, 126, 101, 0.938);
+    font-size: 10px;
+    line-height: 28px;
+}
+
+.formInChat {
+    width: 100%;
+    height: 62px;
+}
+
+.uploadInChat {
+    float: left;
+    width: 75px;
+    height: 100%;
+    margin-left: 40px;
+}
+
+.formUploadInUpload {
+    float: left;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.label1InupFrom {
+    display: inline-block;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(images/message/upload.png);
+    background-repeat: no-repeat;
+    background-size: 75px 27px;
+    width: 75px;
+    height: 27px;
+    position: relative;
+}
+
+.sendPic {
+    position: absolute;
+    top: 30px;
+    font-size: 12px;
+}
+
+.typeInChat {
+    float: left;
+    width: 60px;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.textInputInChat {
+    background-image: url(images/message/input.png);
+    background-repeat: no-repeat;
+    background-size: 510px 30px;
+    width: 510px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding-left: 10px;
+    margin-left: 7\0px;
+    color: white;
+    outline: none;
+    font-size: 12px;
+}
+
+.textInputInChat::-webkit-input-placeholder {
+    /*輸入框預設文字改色*/
+    color: white;
+}

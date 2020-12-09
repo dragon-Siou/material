@@ -1,0 +1,75 @@
+/*這是共同的css，用在控制圖片排版&根據裝置大小決定一列有幾張圖片的設定*/
+
+
+/*適用頁面 index ， index_productpreview ， person ， person_uploadpreview*/
+
+.content {
+    width: 100%;
+    margin: 5px auto;
+    columns: 5;
+    column-gap: 30px;
+}
+
+
+/*測試位置是否跑版的邊界線
+border: solid #E3A498 2px; */
+
+.content .box:first-child {
+    margin: 0 5px;
+}
+
+.content .box {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    break-inside: avoid;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.content .box img {
+    max-width: 100%;
+}
+
+.content .box h2 {
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.content .box p {
+    margin: 0;
+    padding: 0 0 10px;
+    font-size: 16px;
+}
+
+@media (max-width:1200px) {
+    .content {
+        columns: 4;
+        width: calc(100%-40px);
+        box-sizing: border-box;
+        padding: 20px 20px 20px 0;
+    }
+}
+
+@media (max-width:960px) {
+    .content {
+        columns: 3;
+        width: calc(100%-40px);
+        box-sizing: border-box;
+        padding: 20px 20px 20px 0;
+    }
+}
+
+@media (max-width:768px) {
+    .content {
+        columns: 2;
+    }
+}
+
+@media (max-width:480px) {
+    .content {
+        columns: 1;
+    }
+}

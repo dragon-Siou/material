@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Pick a pic</title>
+    <link rel="icon" href="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/99014266_543009106363583_612886314106224640_n.png?_nc_cat=102&_nc_sid=b96e70&_nc_oc=AQk7csJrcNeIUIxKONwRn1t7Eo1Z53EyeHdIOzbFxdE0qagGFcWXgHpFqvjarYtvuVA&_nc_ht=scontent-tpe1-1.xx&oh=82322943c21d87282a41807cbc256a7b&oe=5EF316B1"
+    />
+    <link rel=stylesheet type="text/css" href="web.css">
+    <link rel=stylesheet type="text/css" href="topNavbar.css">
+    <link rel=stylesheet type="text/css" href="content.css">
+    <link rel=stylesheet type="text/css" href="typelist.css">
+    <link rel=stylesheet type="text/css" href="person.css">
+    <link rel=stylesheet type="text/css" href="personUpload.css">
+    <link rel=stylesheet type="text/css" href="changeUserInfo.css">
+    <link rel=stylesheet type="text/css" href="lightbox.css">
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="changeUserInfo.js"></script>
+    <script src="uploadFile.js"></script>
+    <script src="typeClickItem.js"></script>
+    <script src="lightbox.js"></script>
+    <script src="javascript/person.js"></script>
+    <script src="javascript/urlParameter.js"></script>
+    <script src="javascript/showDataObject.js"></script>
+    <script src="javascript/loginChecking.js"></script>
+    <!--sweetalert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="personNavBarContainer">
+        <div class="signlogo">
+            <a href="index.html">
+                <img src="images/logo_static.png">
+            </a>
+        </div>
+        <div class="signmenu">
+            <!--
+            <img src="images/personMessage.png">
+            -->
+            <a href="messages.html">
+                <img src="images/message.png" class="message">
+            </a>
+            <a href="checker.html">
+                <img src="images/shopcart.png">
+            </a>
+            <!--改登出-->
+            <a id="bigHeadOrLogoutLink">
+                <img id="bigHeadOrLogout" src="images/logout.png" class="logout">
+            </a>
+
+
+
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="userInfoContainer">
+            <div class="userInfoBlock">
+                <div class="userImage">
+                    <img id="bigHead">
+                </div>
+                <!--文字敘述部分(右邊四列)-->
+                <div class="user">
+                    <span id="userName"></span>
+                </div>
+                
+                <div id="userFans" class="user userFans">
+                    
+                </div>
+                <div id="profile" class="user userSkill">
+                    <!--擅長照片調色、人像插畫-->
+
+                </div>
+
+                <div id="userButton" class="user">
+                    <div class="userAct">
+                        <a href="#userInfoInClick">
+                            <img src="images/editFile.png">
+                        </a>
+                    </div>
+
+                    <div class="userAct">
+                        <a href="#uploadPic">
+                            <img src="images/uploadLightbox/upload.png">
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="typelist">
+
+        <ul>
+            <li><a id="galleryPage" href="person_main.html?showDataType=gallery">作品</a></li>
+            <li><a id="productPage" href="person_main.html?showDataType=product">商品</a></li>
+            <li><a id="commissionPage" href="person_main.html?showDataType=commission">委託</a></li>
+        </ul>
+
+    </div>
+
+
+    <div class="content">
+        <!--
+        <div class="box">
+            <a id="backtoPic1"></a>
+            <a href="#pic1">
+                <img src="images/nieuGivePhoto/1.jpg">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#pic2">
+                <img src="images/nieuGivePhoto/2.jpg">
+            </a>
+        </div>-->
+
+    </div>
+
+    <!--圖片錨點區
+    <div class="lightbox" id="pic1">
+        <div class="brightFilter">
+            <img src="images/nieuGivePhoto/1.jpg">
+        </div>
+        <div class="whiteInfo">
+            <div class="toolRow">
+                <img src="images/picInfoPage/edit.png">
+                <img src="images/picInfoPage/more.png">
+                <a href="#backtoPic1"><img src="images/picInfoPage/close.png"></a>
+            </div>
+
+            <div class="realInfoContainer">
+                <!-工具列下方第一欄->
+                <div class="userNameInClick">
+                    <div class="userName">
+                        <img src="images/bigHead/8.png">
+
+                    </div>
+                    <div class="realnameInClick">fubi_ccy</div>
+                    <div class="time">
+                        2020/5/11 10:17 P.M.
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+                <!-工具列下方第二欄，標題->
+                <div class="picTitleInClick">
+                    My Drawings
+                </div>
+                <!-工具列下方第三欄，標籤->
+                <div class="picTagInClick">
+                    <ul>
+                        <li>#art</li>
+                        <li>#drawing</li>
+                        <li>#pic</li>
+                        <li>#moody</li>
+                        <li>#cute</li>
+                    </ul>
+                </div>
+                <!-工具列下方第四欄，敘述->
+                <div class="desctiptionInClick">
+                    I am always looking for models to shoot!<br> Comment down if you want a photoshoot!<br> need a photoshoot ? Conacting in bio!
+                </div>
+
+            </div>
+
+            <div class="commentArea">
+                <!-一則留言開始->
+                <div class="commentInClick">
+                    <img src="images/bigHead/3.png">
+                    <div class="name">
+                        book_fish
+                        <span class="comment">好酷喔!拍什麼呀?</span>
+                        <span class="sentMinute">4分鐘</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="commentInClick">
+                    <img src="images/bigHead/3.png">
+                    <div class="name">
+                        book_fish
+                        <span class="comment">好酷喔!拍什麼呀?</span>
+                        <span class="sentMinute">4分鐘</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="commentInClick">
+                    <img src="images/bigHead/3.png">
+                    <div class="name">
+                        book_fish
+                        <span class="comment">好酷喔!拍什麼呀?</span>
+                        <span class="sentMinute">4分鐘</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="enterArea">
+                <form>
+                    <img src="images/bigHead/5.png" class="bigHeadInSentComment">
+                    <input type="text" placeholder="留言..." class="typeWordInSentComment">
+                </form>
+            </div>
+        </div>
+    </div>-->
+
+    <div class="lightbox" id="userInfoInClick">
+        <div class="changeUserInfoContainer">
+            <div class="listInUserClick">
+                <div class="listInUserClick_border">
+
+                    <ul>
+                        <li>
+                            <label for="editFile">
+                                <input type="radio" name="which" id="editFile" class="radioInEditPage">編輯個人檔案
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="chPasswd">
+                                <input type="radio" name="which" id="chPasswd" class="radioInEditPage">變更密碼
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="record">
+                                <input type="radio" name="which" id="record" class="radioInEditPage">購買紀錄
+                            </label>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="next">
+                <div class="closeContainer">
+                    <a href="#">
+                        <img src="images/picInfoPage/close.png" class="closeEditPage">
+                    </a>
+                </div>
+                <div class="bk1" id="t1">
+
+
+                    <form class="editPersonInfo" id="editProfileForm">
+                        <div class="infoFirst">
+                            <div class="controlEditWidth">
+                                <img class="infoFirst_SmallHead">
+                                <!--<img src="images/bigHead/9.png" class="infoFirst_SmallHead">-->
+                                <div class="infoFirst_name">
+                                    <div id="infoFirst_name">
+                                        <!--名字-->
+                                    </div>
+                                    <label for="file-upload" class="custom-file-upload">
+                                       <input id="file-upload" name="file-upload" type="file" class="file_uploadInEdit"/>
+                                       <span class="bigHeadUpload" id="uploadFileName"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infoEnterRow">
+                            <div class="infoEnterRow_fieldName">
+                                使用者名稱
+                            </div>
+                            <input type="text" id="editUserName" name="userName" value="" class="infoEnterRow_inputField">
+                        </div>
+                        <div class="infoEnterRow">
+                            <div class="infoEnterRow_fieldName">
+                                個人簡介
+                            </div>
+                            <input type="text" id="editProfile" name="profile" value="" class="infoEnterRow_inputField">
+                        </div>
+                        <!--
+                        <div class="infoEnterRow">
+                            <div class="infoEnterRow_fieldName">
+                                電子郵件
+                            </div>
+                            <input type="text" value="" class="infoEnterRow_inputField">
+                        </div>-->
+                        <div class="infoEnterRow">
+                            <input type="submit" id="editProfileSubmit" value="" class="infoEnterRow_inputField">
+                        </div>
+                    </form>
+                </div>
+                <div class="bk2" id="t2">
+                    <form class="editPersonInfo" id="editPasswordForm">
+                        <!--
+                        <div class="infoFirst">
+                            <div class="controlEditWidth">
+                                <img src="images/bigHead/9.png" class="infoFirst_SmallHead">
+                                <div class="infoFirst_nameInBk2">
+                                    charlie_brown0924
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        <div class="infoEnterRow">
+                            <div class="infoEnterRow_fieldName">
+                                舊密碼
+                            </div>
+                            <input type="text" name="oldPassword" value="" class="infoEnterRow_inputField">
+                        </div>
+                        <div class="infoEnterRow">
+                            <div class="infoEnterRow_fieldName">
+                                新密碼
+                            </div>
+                            <input type="text" name="newPassword" value="" class="infoEnterRow_inputField">
+                        </div>
+                        <div class="infoEnterRow">
+                            <div class="infoEnterRow_fieldName">
+                                確認新密碼
+                            </div>
+                            <input type="text" name="confrimPassword" value="" class="infoEnterRow_inputField">
+                        </div>
+                        <div class="infoEnterRow">
+                            <input type="submit" id="editPasswordSubmit" value="" class="infoEnterRow_inputField">
+                        </div>
+                    </form>
+                </div>
+                <div class="bk3" id="t3">
+                    <div class="buyRecord">
+                        <!--                        <div class="buyRecordList">
+                            <div class="buyRecordList_leftImage">
+                                <img src="images/nieuGivePhoto/3.jpg" class="buyRecordList_image">
+                            </div>
+                            <div class="buyRecordList_midInfo">
+                                <div class="buyRecordList_midInfo_first">
+                                    <div class="buyRecordList_midInfo_first_headContainer">
+                                        <img src="images/bigHead/8.png" class="buyRecordList_midInfo_smallHead">
+                                    </div>
+                                    <div class="buyRecordList_midInfo_first_name">
+                                        jason_dog
+                                    </div>
+                                    <div class="buyRecordList_midInfo_first_conact">
+                                        <img src="images/userControllPage/conact.png" class="buyRecordList_midInfo__conactBTN">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="buyRecordList_midInfo_two">
+                                    [照片]工作室作品照 PIC of my drawings
+                                </div>
+                                <div class="buyRecordList_midInfo_three">
+                                    交易日期：2020/5/14 下午 08:14
+                                </div>
+                                <div class="buyRecordList_midInfo_four">
+                                    <div>
+                                        <img src="images/userControllPage/getFile.png" class="buyRecordList_midInfo_getBTN">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buyRecordList_rightPrice">
+                                $289
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="buyRecordList">
+                            <div class="buyRecordList_leftImage">
+                                <img src="images/nieuGivePhoto/1.jpg" class="buyRecordList_image">
+                            </div>
+                            <div class="buyRecordList_midInfo">
+                                <div class="buyRecordList_midInfo_first">
+                                    <div class="buyRecordList_midInfo_first_headContainer">
+                                        <img src="images/bigHead/8.png" class="buyRecordList_midInfo_smallHead">
+                                    </div>
+                                    <div class="buyRecordList_midInfo_first_name">
+                                        jason_dog
+                                    </div>
+                                    <div class="buyRecordList_midInfo_first_conact">
+                                        <img src="images/userControllPage/conact.png" class="buyRecordList_midInfo__conactBTN">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="buyRecordList_midInfo_two">
+                                    [照片]工作室作品照 PIC of my drawings
+                                </div>
+                                <div class="buyRecordList_midInfo_three">
+                                    交易日期：2020/5/14 下午 08:14
+                                </div>
+                                <div class="buyRecordList_midInfo_four">
+                                    <div>
+                                        <img src="images/userControllPage/getFile.png" class="buyRecordList_midInfo_getBTN">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buyRecordList_rightPrice">
+                                $189
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="buyRecordList">
+                            <div class="buyRecordList_leftImage">
+                                <img src="images/nieuGivePhoto/3.jpg" class="buyRecordList_image">
+                            </div>
+                            <div class="buyRecordList_midInfo">
+                                <div class="buyRecordList_midInfo_first">
+                                    <div class="buyRecordList_midInfo_first_headContainer">
+                                        <img src="images/bigHead/8.png" class="buyRecordList_midInfo_smallHead">
+                                    </div>
+                                    <div class="buyRecordList_midInfo_first_name">
+                                        jason_dog
+                                    </div>
+                                    <div class="buyRecordList_midInfo_first_conact">
+                                        <img src="images/userControllPage/conact.png" class="buyRecordList_midInfo__conactBTN">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="buyRecordList_midInfo_two">
+                                    [照片]工作室作品照 PIC of my drawings
+                                </div>
+                                <div class="buyRecordList_midInfo_three">
+                                    交易日期：2020/5/14 下午 08:14
+                                </div>
+                                <div class="buyRecordList_midInfo_four">
+                                    <div>
+                                        <img src="images/userControllPage/getFile.png" class="buyRecordList_midInfo_getBTN">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buyRecordList_rightPrice">
+                                $289
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="lightbox" id="uploadPic">
+
+        <div class="backGroudInUpload">
+            <div class="closeInUpload">
+                <a href="#"><img src="images/uploadLightbox/close.png" class="yyy"></a>
+            </div>
+
+            <!--上傳-->
+            <form id="uploadForm" class="formInUpload">
+                <div class="firstRowInUpload">
+                    <input id="uploadTitle" name="uploadTitle" type="text" placeholder="標題" class="input1inForm">
+                    <div class="input2inForm">
+
+                        <label for="file-upload1" class="label1InupFrom">
+                            <input id="file-upload1" name="file-upload1" type="file" class="formUploadInUpload" />
+                            <span class="uploadFileName" id="uploadFileName2"></span>
+                        </label>
+                    </div>
+                    <div class="input3inForm">
+                        <!--radio 要自己加上value，name要設一樣才會在同個群組裡-->
+                        <span>
+                            <input type="radio" id="galleryRadio" name="uploadType" value="gallery" checked>作品
+                        </span>
+                        <span>
+                            <input type="radio" id="productRadio" name="uploadType" value="product">商品
+                        </span>
+                        <span>
+                            <input type="radio" id="commissionRadio" name="uploadType" value="commission">委託
+                        </span>
+
+                    </div>
+
+                    <div class="input4inForm" id="priceBlock">
+                        <span>價格</span>
+                        <input id="uploadPrice" name="uploadPrice" type="text">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="twoRowInUpload">
+                    <div class="textInTwoRow">敘述</div>
+                    <div class="clear"></div>
+                    <textarea id="uploadDescription" name="uploadDescription"></textarea>
+                </div>
+
+                <div class="threeRowInUpload">
+                    <div class="textInTwoRow">標籤</div>
+                    <div class="clear"></div>
+                    <input id="uploadLable" name="uploadLable" type="text">
+                </div>
+
+                <div class="fourRowInUpload">
+                    <button id="uploadButton" name="uploadButton" type="button"></button>
+                </div>
+            </form>
+        </div>
+
+
+
+</body>
+
+
+
+
+</html>

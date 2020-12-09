@@ -1,0 +1,85 @@
+/*person.html*/
+
+.personNavBarContainer {
+    background-image: url(images/personbg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.userInfoContainer {
+    display: block;
+    text-align: center;
+}
+
+.userInfoBlock {
+    display: inline-block;
+    width: 380px;
+    height: 190px;
+}
+
+.userImage {
+    float: left;
+}
+
+.userImage img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.fansNum {
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+}
+
+.user {
+    float: left;
+    text-align: left;
+    width: 190px;
+    height: 35px;
+    margin-left: 30px;
+    line-height: 35px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.user_first {
+    margin-top: 25px;
+}
+
+.userFans {
+    font-size: 16px;
+}
+
+.userSkill {
+    font-size: 16px;
+}
+
+.userAct {
+    float: left;
+    margin-right: 10px;
+}
+
+.userAct a img {
+    width: 70px;
+}
+
+
+/*針對追蹤*/
+
+.userAct a img.follow {
+    margin-top: 5px;
+    width: 36px;
+}
+
+.userAct a img.following {
+    margin-top: 5px;
+    width: 45px;
+}
